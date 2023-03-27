@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		FA2BCF0829D153AD00876F9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BCF0729D153AD00876F9F /* AppDelegate.swift */; };
 		FA2BCF0A29D153AD00876F9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BCF0929D153AD00876F9F /* SceneDelegate.swift */; };
-		FA2BCF0C29D153AD00876F9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BCF0B29D153AD00876F9F /* ViewController.swift */; };
 		FA2BCF0F29D153AD00876F9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2BCF0D29D153AD00876F9F /* Main.storyboard */; };
 		FA2BCF1129D153AE00876F9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2BCF1029D153AE00876F9F /* Assets.xcassets */; };
 		FA2BCF1429D153AE00876F9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2BCF1229D153AE00876F9F /* LaunchScreen.storyboard */; };
+		FA2BCF2629D15B5400876F9F /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BCF2529D15B5400876F9F /* CreateViewController.swift */; };
+		FA2BCF2C29D15EE400876F9F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BCF2B29D15EE400876F9F /* SignInViewController.swift */; };
+		FA2BCF3229D1642900876F9F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BCF3129D1642900876F9F /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA2BCF0429D153AD00876F9F /* Out of Milk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Out of Milk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2BCF0729D153AD00876F9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA2BCF0929D153AD00876F9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA2BCF0B29D153AD00876F9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA2BCF0E29D153AD00876F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA2BCF1029D153AE00876F9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA2BCF1329D153AE00876F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA2BCF1529D153AE00876F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2BCF2529D15B5400876F9F /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		FA2BCF2B29D15EE400876F9F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FA2BCF3129D1642900876F9F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,161 @@
 		FA2BCF0629D153AD00876F9F /* Out of Milk */ = {
 			isa = PBXGroup;
 			children = (
-				FA2BCF0729D153AD00876F9F /* AppDelegate.swift */,
-				FA2BCF0929D153AD00876F9F /* SceneDelegate.swift */,
-				FA2BCF0B29D153AD00876F9F /* ViewController.swift */,
-				FA2BCF0D29D153AD00876F9F /* Main.storyboard */,
-				FA2BCF1029D153AE00876F9F /* Assets.xcassets */,
-				FA2BCF1229D153AE00876F9F /* LaunchScreen.storyboard */,
+				FA2BCF2029D154C200876F9F /* Application */,
+				FA2BCF1F29D154B300876F9F /* Constant */,
+				FA2BCF1E29D154A700876F9F /* Extenstions */,
+				FA2BCF1D29D1549900876F9F /* Serecns */,
+				FA2BCF1C29D1548900876F9F /* Storyboard */,
+				FA2BCF1B29D1547B00876F9F /* Resourecs */,
 				FA2BCF1529D153AE00876F9F /* Info.plist */,
 			);
 			path = "Out of Milk";
+			sourceTree = "<group>";
+		};
+		FA2BCF1B29D1547B00876F9F /* Resourecs */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BCF1029D153AE00876F9F /* Assets.xcassets */,
+			);
+			path = Resourecs;
+			sourceTree = "<group>";
+		};
+		FA2BCF1C29D1548900876F9F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BCF0D29D153AD00876F9F /* Main.storyboard */,
+				FA2BCF1229D153AE00876F9F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FA2BCF1D29D1549900876F9F /* Serecns */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BCF2D29D1627D00876F9F /* Home */,
+				FA2BCF2729D15EA100876F9F /* Sign IN View */,
+				FA2BCF2129D15AFD00876F9F /* Create View */,
+			);
+			path = Serecns;
+			sourceTree = "<group>";
+		};
+		FA2BCF1E29D154A700876F9F /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		FA2BCF1F29D154B300876F9F /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		FA2BCF2029D154C200876F9F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BCF0729D153AD00876F9F /* AppDelegate.swift */,
+				FA2BCF0929D153AD00876F9F /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FA2BCF2129D15AFD00876F9F /* Create View */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BCF2229D15B1100876F9F /* View */,
+				FA2BCF2429D15B1E00876F9F /* Model */,
+				FA2BCF2329D15B1700876F9F /* ViewModel */,
+			);
+			path = "Create View";
+			sourceTree = "<group>";
+		};
+		FA2BCF2229D15B1100876F9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BCF2529D15B5400876F9F /* CreateViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA2BCF2329D15B1700876F9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA2BCF2429D15B1E00876F9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA2BCF2729D15EA100876F9F /* Sign IN View */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BCF2829D15EB700876F9F /* View */,
+				FA2BCF2A29D15EC600876F9F /* Model */,
+				FA2BCF2929D15EBE00876F9F /* ViewModel */,
+			);
+			path = "Sign IN View";
+			sourceTree = "<group>";
+		};
+		FA2BCF2829D15EB700876F9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BCF2B29D15EE400876F9F /* SignInViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA2BCF2929D15EBE00876F9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA2BCF2A29D15EC600876F9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA2BCF2D29D1627D00876F9F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BCF2E29D1628500876F9F /* View */,
+				FA2BCF2F29D1628B00876F9F /* Model */,
+				FA2BCF3029D1629100876F9F /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FA2BCF2E29D1628500876F9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BCF3129D1642900876F9F /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA2BCF2F29D1628B00876F9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA2BCF3029D1629100876F9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA2BCF0C29D153AD00876F9F /* ViewController.swift in Sources */,
+				FA2BCF3229D1642900876F9F /* HomeViewController.swift in Sources */,
+				FA2BCF2C29D15EE400876F9F /* SignInViewController.swift in Sources */,
 				FA2BCF0829D153AD00876F9F /* AppDelegate.swift in Sources */,
 				FA2BCF0A29D153AD00876F9F /* SceneDelegate.swift in Sources */,
+				FA2BCF2629D15B5400876F9F /* CreateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
